@@ -1,0 +1,19 @@
+{
+  "name": "api-rest-ecommerce",
+  "version": "1.0.0",
+  "description": "api-rest-ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silverbryan/api-rest-ecommerce.git"
+  },
+  "author": "Bryan Plata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silverbryan/api-rest-ecommerce/issues"
+  },
+  "homepage": "https://github.com/silverbryan/api-rest-ecommerce#readme"
+}
