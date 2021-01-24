@@ -4,7 +4,9 @@
   "description": "api-rest-ecommerce",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -L"
+    "start": "node index.js",
+    "start:dev": "nodemon -L",
+    "heroku-postbuild": "npm install --production "
   },
   "repository": {
     "type": "git",
