@@ -3,7 +3,7 @@ const { User } = require("../db.js");
 //
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const config = require('../../config.json');
+const config = require('../config.json');
 //
 module.exports = {
   getById,
