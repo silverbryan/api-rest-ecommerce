@@ -4,15 +4,16 @@ const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcrypt");
 
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env;
-
-const sequelize = new Sequelize(
-    `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`,
-    {
-        logging: false,
-        native: false,
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'postgres',
+    logging: false,
+    dialectOptions: {
+        ssl: {
+            required: true,
+            rejectUnauthorized: false
+        }
     }
-);
+});
 
 const basename = path.basename(__filename);
 const modelDefiners = [];
